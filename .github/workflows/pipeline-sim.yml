@@ -1,0 +1,10 @@
+name: pipeline-sim
+on: [push, workflow_dispatch]
+permissions:
+  id-token: write
+  actions: read
+jobs:
+  sim:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "campaign-sim: benign payload marker"
